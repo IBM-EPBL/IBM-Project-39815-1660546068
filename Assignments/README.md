@@ -1,6 +1,6 @@
-|                    |        Name        |
-|-----------------------------------------|
-|   Team Lead        |    Murukesan M     |
-|   Team member 1    |    Karthikeyan S   |
-|   Team member 2    |    Sujitha M       |
-|   Team member 3    |    Roshan B        |
+|               | Name             |
+|---------------|------------------|
+| Team Lead     | Murukesan M      |
+| Team Member 1 | Karthikeyan S    |
+| Team Member 2 | Sujitha M        |
+| Team Member 3 | Roshan B         |

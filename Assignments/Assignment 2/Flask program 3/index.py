@@ -1,0 +1,21 @@
+# flask program which should display resume details and also have upload some resume option by using file uploading
+from flask import *
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def upload():
+    return render_template("upload.html")
+
+
+@app.route('/success', methods=['POST'])
+def success():
+    if request.method == 'POST':
+        f = request.files['file']
+        f.save(f.filename)
+        return render_template("success.html", name=f.filename)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

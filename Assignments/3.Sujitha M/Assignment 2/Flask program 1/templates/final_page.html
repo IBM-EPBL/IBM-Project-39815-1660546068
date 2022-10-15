@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask application</title>
+</head>
+<body style="background-color:black"><center>
+<br><div style="margin-top:5rem;background-color:#303245; height:25rem;width:40rem;"><h1 style="padding-bottom:1rem;margin-top:2rem;color:white">Submitted Details</h1>
+    {% for key,value in datas.items() %}
+    <h1 style="color:white">{{key}} : {{value}}</h1><br>
+    {% endfor %}
+</body>
+</html>

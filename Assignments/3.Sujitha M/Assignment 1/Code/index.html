@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+ 
+<head> 
+  <meta charset="utf-8"> 
+  <title> 🩸Plasma Donation Application</title> 
+  <!-- CSS only --> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+</head> 
+<style media="screen"> 
+  html { 
+    height: 100%; 
+  } 
+  body { 
+    margin:0; 
+    padding:0; 
+    font-family: sans-serif; 
+    background: linear-gradient(#B20600, #F9F9F9); 
+  } 
+ 
+  .login-box { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 400px; 
+    padding: 40px; 
+    transform: translate(-50%, -50%); 
+    background: rgba(0,0,0,.6); 
+    box-sizing: border-box; 
+    box-shadow: 0 15px 25px rgba(0,0,0,.6); 
+    border-radius: 10px; 
+  } 
+ 
+  .login-box h2 { 
+    margin: 0 0 30px; 
+    padding: 0; 
+    color: #fff; 
+    text-align: center; 
+  } 
+ 
+  .login-box .user-box { 
+    position: relative; 
+  } 
+ 
+  .login-box .user-box input { 
+    width: 100%; 
+    padding: 10px 0; 
+    font-size: 16px; 
+    color: #fff; 
+    margin-bottom: 30px; 
+    border: none; 
+    border-bottom: 1px solid #fff; 
+    outline: none; 
+    background: transparent; 
+  } 
+  .login-box .user-box label { 
+    position: absolute; 
+    top:0; 
+    left: 0; 
+    padding: 10px 0; 
+    font-size: 16px; 
+    color: #fff; 
+    pointer-events: none; 
+    transition: .5s; 
+  } 
+ 
+  .login-box .user-box input:focus ~ label, 
+  .login-box .user-box input:valid ~ label { 
+    top: -20px; 
+    left: 0; 
+    color: #CA1601; 
+    font-size: 12px; 
+  } 
+</style> 
+<body> 
+  <div class="login-box"> 
+ 
+    <form> 
+      <div class="user-box"> 
+        <input type="text" name="" required=""> 
+        <label>Name</label> 
+      </div> 
+      <div class="user-box"> 
+        <input type="text" name="" required=""> 
+        <label>Qualification</label> 
+      </div> 
+      <div class="user-box"> 
+        <input type="number" name="" required=""> 
+        <label>age</label> 
+      </div> 
+      <div class="user-box"> 
+        <input type="email" name="" required=""> 
+        <label>Email</label> 
+      </div> 
+      <button type="button" class="btn btn-warning">Submit</button> 
+ 
+  </div> 
+ 
+ 
+</body> 
+ 
+</html

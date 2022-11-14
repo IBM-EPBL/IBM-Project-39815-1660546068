@@ -3,13 +3,13 @@ import ibm_db
 app=Flask(__name__)
 app.secret_key='hidden'
 conn=ibm_db.connect(
-    f"DATABASE=bludb;"
-    f"HOSTNAME=8e359033-a1c9-4643-82ef-8ac06f5107eb.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;"
-    f"PORT=30120;"
-    f"USERNAME=dws78237;"
-    f"PASSWORD=OqY2YwnXTGpH4oGh;"
+    f"DATABASE={os.environ.get('DATABASE')};"
+    f"HOSTNAME={os.environ.get('HOSTNAME')};"
+    f"PORT={os.environ.get('PORT')};"
+    f"USERNAME={os.environ.get('DB_USERNAME')};"
+    f"PASSWORD={os.environ.get('PASSWORD')};"
     "SECURITY=SSL;"
-    f"SSLSERVERCERTIFICATE=DigiCertGlobalRootCA.crt;",
+    f"SSLSERVERCERTIFICATE={os.environ.get('SSLSERVERCERTIFICATE')};",
     '',
     ''
 )
